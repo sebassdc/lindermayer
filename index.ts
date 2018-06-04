@@ -1,5 +1,5 @@
 /// range(5) -> [0, 1, 2, 3, 4]
-const range = n => [...Array(n).keys()]
+const range = n => Array.from(Array(n), (_, i) => i)
 
 export const genSystem = ({
   inicio = '',
@@ -38,8 +38,8 @@ const genDrawer = ({turtle, angle, length, descriptor}) =>
     )
 
 
-const drawSystem = ({sys, n, ...rest}) => {
-  const drawer = genDrawer(rest)
+const drawSystem = ({sys, n, turtle, angle, length, descriptor}) => {
+  const drawer = genDrawer({turtle, angle, length, descriptor})
   sys(n)
     .split('')
     .forEach(e =>
