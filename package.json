@@ -1,7 +1,6 @@
 {
   "name": "lindermayer",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -10,5 +9,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebassdc/lindermayer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebassdc/lindermayer/issues"
+  },
+  "homepage": "https://github.com/sebassdc/lindermayer#readme",
+  "description": ""
 }
