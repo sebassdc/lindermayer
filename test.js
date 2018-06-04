@@ -14,7 +14,7 @@ const standartDescriptor =  {
 const kotchCurve90 = genSystemDrawer({
   angle: 90,
   sys: genSystem({
-    inicio: 'F++F++F'
+    inicio: 'F++F++F',
     variables: ['F'],
     constantes: ['+', '-'],
     reglas: {

@@ -1,12 +1,14 @@
 {
   "name": "lindermayer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +20,10 @@
     "url": "https://github.com/sebassdc/lindermayer/issues"
   },
   "homepage": "https://github.com/sebassdc/lindermayer#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }
